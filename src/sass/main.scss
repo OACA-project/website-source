@@ -53,13 +53,8 @@ body {
         }
 
         .getting-started {
-            text-align: right;
+            text-align: center;
             padding-right: 10px;
-        }
-
-        .donate {
-            text-align: left;
-            padding-left: 10px;
         }
     }
 }
@@ -68,16 +63,20 @@ body {
     .page-section {
         padding: 20px 0;
         text-align: center;
+        height: 100vh;
 
-        &.primary {
-            padding-bottom: 60px;
-        }
-
-        &.secondary {
+        .content {
             padding: 60px 0;
-            background-color: #e8e8e8;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
+            height: 100%;
+
+            h1, h2, h3, h4 {
+                font-weight: 300;
+            }
+
+            h1.title {
+                text-align: center;
+                margin-bottom: 30px;
+            }
 
             h3.through-line {
                 text-transform: uppercase;
@@ -89,6 +88,13 @@ body {
                     border-color: #e8e8e8;
                     background-image: linear-gradient(transparent 47%, #ccc 48%, #ccc 52%, transparent 52%);
                 }
+            }
+
+            p.title-info {
+                font-size: 14px;
+                color: #888;
+                text-align: left;
+                margin-top: -16px;
             }
 
             .entry {
@@ -127,6 +133,100 @@ body {
                     }
                 }
             }
+
+            &.about {
+                h4 {
+                    line-height: 1.4;
+                    margin: 20px 0;
+                }
+            }
+
+            .regulatory-copy {
+                padding-top: 30px;
+                p {
+                    font-size: 22px;
+                    line-height: 1.4;
+                    text-align: left;
+                }
+            }
+
+            .cmm-diagram {
+                position: relative;
+
+                .img-holder {
+                    display: block;
+                    height: 500px;
+                    border: 2px solid #aaa;
+                    background-color: #f8f8f8;
+                    width: 100%;
+
+
+                    &::after {
+                        content: 'diagram goes here';
+                        display: block;
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 200px;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-top: -20px;
+                        margin-left: -100px;
+                    }
+                }
+            }
+
+            .cmm-about {
+                text-align: left;
+
+                h3 {
+                    color: #3599ea;
+                    margin-bottom: 0;
+                }
+
+                .tagline {
+                    color: #888;
+                    margin-top: 0;
+                    font-size: 14px;
+                    text-transform: uppercase;
+
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        &.primary {
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 60px;
+            height: 90vh;
+
+            .preface {
+                margin-top: 40px;
+            }
+        }
+
+        &.neutral {
+            background-color: #fff;
+            color: #444;
+        }
+
+        &.secondary {
+            background-color: #e8e8e8;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+
+        }
+
+        &.tertiary {
+            background-color: #2E73B0;
+            border-top: 1px solid #003b70;
+            border-bottom: 1px solid #003b70;
+            color: #fff;
         }
     }
 
