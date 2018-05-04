@@ -29,8 +29,14 @@ html(lang="en")
                                     a.dropdown-item(href="#") Usage Models
                                     a.dropdown-item(href="#") Technical White Papers
                                     a.dropdown-item(href="#") Webinars
-                            li.nav-item
-                                // a.nav-link(href="#") Participate
+                            li.nav-item.dropdown
+                                a.nav-link.dropdown-toggle#contentDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Contact Us
+                                .dropdown-menu(aria-labelledby="contentDropdown")
+                                    a.dropdown-item(href="mailto:oaca@linuxfoundation.org" target="blank") Email
+                                    a.dropdown-item(href="//www.linkedin.com/company/open-data-center-alliance/" target="blank") LinkedIn
+                                    a.dropdown-item(href="//github.com/OACA-project" target="blank") GitHub
+                            // li.nav-item
+                                // a.nav-link(href="mailto:oaca@linuxfoundation.org") Contact Us
 
         #main-content
         main.page-content
@@ -83,6 +89,18 @@ html(lang="en")
                                                 i.circle-border
                                     h4 Share
                                     p Share cloud adoption practices and improve the maturity, safety, and scale of adoption
+
+            section.page-section.neutral
+                .content.d-flex.align-items-center
+                    .container
+                        .row
+                            .col-md-8.offset-2
+                                h1.title 
+                                   a.post-link(href="cmm.html") OACA CMM IT strategy Seminar v6
+                                   p 
+                                      span.highlight Published on Feb 25, 2018
+                                   p This is a seminar on how to develop a Hybrid IT Strategy using the OACA Cloud Maturity Methodology and how to use the OACA Cloud Maturity Toolset
+
 
             section.page-section.secondary
                 .content.d-flex.align-items-center
