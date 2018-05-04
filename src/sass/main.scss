@@ -63,7 +63,7 @@ body {
     .page-section {
         padding: 20px 0;
         text-align: center;
-        height: 100vh;
+        /* height: 100vh; */
 
         .content {
             padding: 60px 0;
@@ -203,10 +203,14 @@ body {
             margin-top: 0;
             padding-top: 0;
             padding-bottom: 60px;
-            height: 90vh;
+            /* height: 90vh; */
 
             .preface {
                 margin-top: 40px;
+            }
+
+            &.primary + .neutral {
+                border-top: 1px solid #ccc;
             }
         }
 

@@ -29,8 +29,14 @@ html(lang="en")
                                     a.dropdown-item(href="#") Usage Models
                                     a.dropdown-item(href="#") Technical White Papers
                                     a.dropdown-item(href="#") Webinars
-                            li.nav-item
-                                // a.nav-link(href="#") Participate
+                            li.nav-item.dropdown
+                                a.nav-link.dropdown-toggle#contentDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Contact Us
+                                .dropdown-menu(aria-labelledby="contentDropdown")
+                                    a.dropdown-item(href="mailto:oaca@linuxfoundation.org" target="blank") Email
+                                    a.dropdown-item(href="//www.linkedin.com/company/open-data-center-alliance/" target="blank") LinkedIn
+                                    a.dropdown-item(href="//github.com/OACA-project" target="blank") GitHub
+                            // li.nav-item
+                                // a.nav-link(href="mailto:oaca@linuxfoundation.org") Contact Us
 
         #main-content
         main.page-content
@@ -38,11 +44,7 @@ html(lang="en")
                 .hero.tall
                     .container
                         h1 Open Alliance for Cloud Adoption
-                        h3 building sustainable open source ecosystems
-                        .row
-                            .col.getting-started
-                                // a.btn.btn-outline-primary(href="#") Get Started
-                                a.btn.btn-outline-primary(href="#") Coming Soon!
+                        h3 enabling innovative, safe and agile use of cloud computing for business
                 .preface
                     .container
                         .row
@@ -88,29 +90,17 @@ html(lang="en")
                                     h4 Share
                                     p Share cloud adoption practices and improve the maturity, safety, and scale of adoption
 
-            section.page-section.tertiary
-                .content.d-flex.align-items-center.about
+            section.page-section.neutral
+                .content.d-flex.align-items-center
                     .container
                         .row
-                            .col-md-6.offset-md-3
-                                h1.title About OACA
-                        .row
-                            .col-md-6.offset-md-3
-                                h4
-                                    | The OACA is a community-led Linux Foundation project to enable innovative, safe
-                                    | and agile use of cloud computing for business value.
+                            .col-md-8.offset-2
+                                h1.title 
+                                   a.post-link(href="cmm.html") OACA CMM IT strategy Seminar v6
+                                   p 
+                                      span.highlight Published on Feb 25, 2018
+                                   p This is a seminar on how to develop a Hybrid IT Strategy using the OACA Cloud Maturity Methodology and how to use the OACA Cloud Maturity Toolset
 
-                        .row
-                            .col-md-6.offset-md-3
-                                h4
-                                    | OACA is driven by the mission to share cloud adoption practices and continuously
-                                    | improve the maturity, safety, and scale of cloud adoption.
-
-                        .row
-                            .col-md-6.offset-md-3
-                                h4
-                                    | Our goal is to create a highly engaged and vibrant community of cloud practitioners
-                                    | collaborating to driver interoperability of practices and value.
 
             section.page-section.secondary
                 .content.d-flex.align-items-center
@@ -128,7 +118,8 @@ html(lang="en")
                                     .col-md-6
                                         .entry
                                             h2
-                                                a.post-link(href="html/Cloud Maturity Model Rev 3.htm") Cloud Maturity Model (CMM)
+                                                a.post-link(href="cmm.html") Cloud Maturity Model (CMM)
+
                                             p Enabling inter-enterprise benchmarking and enterprise IT self-evaluation
 
                                         .entry
@@ -160,6 +151,31 @@ html(lang="en")
                                 p
                                     | Identify opportunities for safer cloud adoption through
                                     | consistent regulatory influence
+
+            section.page-section.tertiary
+                .content.d-flex.align-items-center.about
+                    .container
+                        .row
+                            .col-md-6.offset-md-3
+                                h1.title About OACA
+                        .row
+                            .col-md-6.offset-md-3
+                                h4
+                                    | The OACA is a community-led Linux Foundation project to enable innovative, safe
+                                    | and agile use of cloud computing for business value.
+
+                        .row
+                            .col-md-6.offset-md-3
+                                h4
+                                    | OACA is driven by the mission to share cloud adoption practices and continuously
+                                    | improve the maturity, safety, and scale of cloud adoption.
+
+                        .row
+                            .col-md-6.offset-md-3
+                                h4
+                                    | Our goal is to create a highly engaged and vibrant community of cloud practitioners
+                                    | collaborating to driver interoperability of practices and value.
+
             section.page-section.neutral
                 .content.d-flex.align-items-center
                     .container
@@ -169,7 +185,8 @@ html(lang="en")
                                     //.img-holder
                             .col-md-12
                                 .cmm-about
-                                    h3 OACA Cloud Maturity Model (CMM)
+                                    h3 
+                                        a.post-link(href="cmm.html") OACA Cloud Maturity Model (CMM)
                                     p.tagline Maturing your organization to innovative, safe and agile use of cloud computing
                                     p
                                         | A cloud maturity model (CMM) helps to answer the question "What should our journey
@@ -177,7 +194,6 @@ html(lang="en")
                                         | current state and plan the implementation of cloud technologies. With business
                                         | objectives as a parameter, the CMM defines a target state and then provides the
                                         | keys to performing a gap analysis.
-
 
         footer.page-footer
             .container
@@ -191,11 +207,14 @@ html(lang="en")
                     .col-sm-7
                         ul.social-nav
                             li.nav-item
-                                a(href="#" target="blank")
+                                a(href="//www.linkedin.com/company/open-data-center-alliance/" target="blank")
+                                    i.fab.fa-linkedin
+                            li.nav-item
+                                a(href="//github.com/OACA-project" target="blank")
                                     i.fab.fa-github
                             li.nav-item
-                                a(href="#" target="blank")
-                                    i.fab.fa-twitter
+                                a(href="mailto:oaca@linuxfoundation.org" target="blank")
+                                    i.fa.fa-envelope
 
 
         script(src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
