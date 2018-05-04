@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predev": "rsync -a src/files dist",
     "dev": "./node_modules/.bin/npm-run-all -p -r -l watch:html watch:css watch:js dev:serve",
     "dev:serve": "./node_modules/.bin/http-server -a localhost -p 3000 ./dist",
     "watch:css": "./node_modules/.bin/node-sass --watch --output-style=compressed src/sass/main.scss dist/css/oaca.min.css",
