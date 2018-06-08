@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "mkdir -p src/files dist",
-    "build": "./node_modules/.bin/npm-run-all -p -r -l build:html build:css build:js build:assets",
-    "build:assets": "rsync -a src/files dist",
+    "prebuild": "mkdir -p dist/{css,js,img}",
+    "build": "./node_modules/.bin/npm-run-all build:html build:css build:js build:assets",
+    "build:assets": "test -e src/files && rsync -av src/files dist && rsync -av src/img dist",
     "build:css": "./node_modules/.bin/node-sass --output-style=compressed src/sass/main.scss dist/css/oaca.min.css",
     "build:html": "./node_modules/.bin/pug src/templates -P --out dist",
     "build:js": "./node_modules/.bin/webpack --progress --colors",
