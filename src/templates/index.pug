@@ -1,43 +1,10 @@
 doctype html
 html(lang="en")
     head
-        title OACA
-        link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" media="screen")
-        link(rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.6/css/all.css" media="screen")
-        link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" media="screen")
-        link(rel="stylesheet" media="screen" href="/css/oaca.min.css")
-
+        include includes/head.pug
     body
-        #lf-header
-            .container
-                a(href="https://www.linuxfoundation.org/projects" target="blank")
-                    img(src="/img/lf-projects-horizontal.png")
-        header.page-header
-            .container
-                nav.navbar.navbar-expand-lg.navbar-light
-                    a.navbar-brand(href="#")
-                        img(src="/img/logo-sm.png")
-                    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-                        span.navbar-toggler-icon
 
-                    .collapse.navbar-collapse#navbarSupportedContent
-                        ul.navbar-nav.ml-auto
-                            li.nav-item.dropdown
-                                // a.nav-link.dropdown-toggle#contentDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Content
-                                .dropdown-menu(aria-labelledby="contentDropdown")
-                                    a.dropdown-item(href="#") CMM
-                                    a.dropdown-item(href="#") Usage Models
-                                    a.dropdown-item(href="#") Technical White Papers
-                                    a.dropdown-item(href="#") Webinars
-                            li.nav-item.dropdown
-                                a.nav-link.dropdown-toggle#contentDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Contact Us
-                                .dropdown-menu(aria-labelledby="contentDropdown")
-                                    a.dropdown-item(href="mailto:oaca@linuxfoundation.org" target="blank") Email
-                                    a.dropdown-item(href="//www.linkedin.com/company/open-data-center-alliance/" target="blank") LinkedIn
-                                    a.dropdown-item(href="//github.com/OACA-project" target="blank") GitHub
-                            // li.nav-item
-                                // a.nav-link(href="mailto:oaca@linuxfoundation.org") Contact Us
-
+        include includes/header.pug
         #main-content
         main.page-content
             section.page-section.primary
@@ -194,30 +161,4 @@ html(lang="en")
                                         | current state and plan the implementation of cloud technologies. With business
                                         | objectives as a parameter, the CMM defines a target state and then provides the
                                         | keys to performing a gap analysis.
-
-        footer.page-footer
-            .container
-                .row
-                    .col-sm-5
-                        p
-                            | Copyright &copy; Open Alliance for Cloud Adoption. All rights reserved.
-                            | Linux Foundation is a registered trademark of The Linux Foundation.
-                            | Linux is a registered trademark of Linus Torvalds.
-
-                    .col-sm-7
-                        ul.social-nav
-                            li.nav-item
-                                a(href="//www.linkedin.com/company/open-data-center-alliance/" target="blank")
-                                    i.fab.fa-linkedin
-                            li.nav-item
-                                a(href="//github.com/OACA-project" target="blank")
-                                    i.fab.fa-github
-                            li.nav-item
-                                a(href="mailto:oaca@linuxfoundation.org" target="blank")
-                                    i.fa.fa-envelope
-
-
-        script(src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
-        script(src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
-        script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
-        script(src="/js/oaca.min.js")
+        include includes/footer

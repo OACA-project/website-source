@@ -1,0 +1,25 @@
+#lf-header
+	.container
+	a(href="https://www.linuxfoundation.org/projects" target="blank")
+		img(src="/img/lf-projects-horizontal.png")
+header.page-header
+	.container
+	nav.navbar.navbar-expand-lg.navbar-light
+		a.navbar-brand(href="/")
+		img(src="/img/logo-sm.png")
+		button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+		span.navbar-toggler-icon
+
+		.collapse.navbar-collapse#navbarSupportedContent
+		ul.navbar-nav.ml-auto
+			li.nav-item.dropdown
+			// a.nav-link.dropdown-toggle#contentDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Content
+			.dropdown-menu(aria-labelledby="contentDropdown")
+				a.dropdown-item(href="#") CMM
+				a.dropdown-item(href="#") Usage Models
+				a.dropdown-item(href="#") Technical White Papers
+				a.dropdown-item(href="#") Webinars
+			li.nav-item
+			// a.nav-link(href="#") Participate
+
+
