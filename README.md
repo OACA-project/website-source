@@ -1,3 +1,7 @@
+# PLEASE NOTE: PROJECT HAS BEEN ARCHIVED
+
+The OACA site is being hosted in a different fashion and this content has become redundant. The repository has been archived and is now in a read only state (although it can still be forked).
+
 # OACA Website Source
 This repository contains the static build artifacts to actively develop against the project website.
 
